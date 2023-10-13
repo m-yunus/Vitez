@@ -1,23 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import ButtonNavbar from "./Components/ButtonNavbar/ButtonNavbar";
+import ListTable from "./Components/ListTable/ListTable";
+import NavigationBar from "./Components/Sidebar/NavigationBar";
+import TopNavbar from "./Components/Sidebar/TopNavbar/TopNavbar";
+import Urlnavbar from "./Components/UrlNavbar/Urlnavbar";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="w-full h-screen flex overflow-y-hidden">
+      <NavigationBar />
+      <div className="flex flex-col w-full h-screen">
+        <TopNavbar />
+        <Urlnavbar />
+        <ButtonNavbar />
+        <ListTable />
+      </div>
     </div>
   );
 }
