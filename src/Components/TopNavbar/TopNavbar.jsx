@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Raymond from "../../../assets/Images/raymond-logo.png";
+import Raymond from "../../assets/Images/raymond-logo.png";
 import { CiSearch } from "react-icons/ci";
 import { FiSettings } from "react-icons/fi";
 import { IoMdNotificationsOutline } from "react-icons/io";

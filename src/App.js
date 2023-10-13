@@ -1,7 +1,8 @@
 import ButtonNavbar from "./Components/ButtonNavbar/ButtonNavbar";
 import ListTable from "./Components/ListTable/ListTable";
 import NavigationBar from "./Components/Sidebar/NavigationBar";
-import TopNavbar from "./Components/Sidebar/TopNavbar/TopNavbar";
+import TopNavbar from "./Components/TopNavbar/TopNavbar";
+
 import Urlnavbar from "./Components/UrlNavbar/Urlnavbar";
 
 function App() {
@@ -9,7 +10,7 @@ function App() {
     <div className="w-full h-screen flex overflow-y-hidden">
       <NavigationBar />
       <div className="flex flex-col w-full h-screen">
-        <TopNavbar />
+        <TopNavbar/>
         <Urlnavbar />
         <ButtonNavbar />
         <ListTable />

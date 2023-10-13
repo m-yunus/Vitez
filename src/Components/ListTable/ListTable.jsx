@@ -50,23 +50,43 @@ const ListTable = () => {
           <tbody>
             {data?.map((items) => (
               <tr
-                className=" transition duration-300 mb-3  bg-[#f0ecec] py-4 rounded-full"
+                className=" transition duration-300 mb-3   py-4 rounded-full"
                 key={items?.id}
               >
-               
-                <td className="py-2 px-4 text-center ">{items?.patient_id}</td>
-                <td className="py-2 px-4 text-center">{items?.full_name}</td>
-                <td className="py-2 px-4 text-center">{items?.mobile}</td>
-                <td className="py-2 px-4 text-center">
-                  {formatDate(items?.medical_record?.admission_date)}
+                <td className="py-1  text-center ">
+                  <div
+                    className="bg-[#f0ecec] rounded py-1 "
+                    style={{ borderRadius: "10px 0 0 10px" }}
+                  >
+                    {items?.patient_id}
+                  </div>
                 </td>
-                <td className="py-2 px-4 text-center">
-                  {formatDate(items?.medical_record?.updated_at)}
+                <td className="py-1 text-center">
+                  <div className="bg-[#f0ecec] py-1">{items?.full_name}</div>
                 </td>
-                <td className="py-2 px-4 text-center">
-                  {items?.medical_record?.file_no}
+                <td className="py-1  text-center">
+                  <div className="bg-[#f0ecec] py-1">{items?.mobile}</div>
                 </td>
-              
+                <td className="py-1  text-center">
+                  <div className="bg-[#f0ecec] py-1">
+                    {" "}
+                    {formatDate(items?.medical_record?.admission_date)}
+                  </div>
+                </td>
+                <td className="py-1  text-center">
+                  <div className="bg-[#f0ecec] py-1">
+                    {" "}
+                    {formatDate(items?.medical_record?.updated_at)}
+                  </div>
+                </td>
+                <td className="py-1  text-center">
+                  <div
+                    className="bg-[#f0ecec] py-1"
+                    style={{ borderRadius: "0px 10px 10px 0px" }}
+                  >
+                    {items?.medical_record?.file_no}
+                  </div>
+                </td>
               </tr>
             ))}
           </tbody>

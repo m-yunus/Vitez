@@ -5,8 +5,16 @@
 body{
   box-sizing: border-box;
 }
-table {
-  border-collapse: collapse;
+table thead {
+  border-collapse: separate;
   border-spacing: 0 10px;
   
+}
+table tbody{
+border-collapse: collapse;
+
+}
+tbody *{
+  margin: 0;
+  padding: 0;
 }
